@@ -1,20 +1,21 @@
-package com.valerijovich.model;
+package com.valerijovich;
+
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
 // The DAO Pattern in Java
+@XStreamAlias("equipment")
 public class Equipment {
 
+    @XStreamAsAttribute
+    @XStreamAlias("name")
     private String equipmentName;
+    @XStreamAsAttribute
+    @XStreamAlias("id")
     private int equipmentId;
+    @XStreamOmitField()
     private int equipmentWellId;
-
-    public Equipment() {
-    }
-
-    public Equipment(String equipmentName, int equipmentId, int equipmentWellId) {
-        this.equipmentName = equipmentName;
-        this.equipmentId = equipmentId;
-        this.equipmentWellId = equipmentWellId;
-    }
 
     public int getEquipmentId() {
         return equipmentId;
