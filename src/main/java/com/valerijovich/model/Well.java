@@ -1,10 +1,14 @@
-package com.valerijovich;
+package com.valerijovich.model;
+
+import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
 
 import java.util.List;
 
 // The DAO Pattern in Java
 public class Well {
 
+    // Аннотации XStream
+    @XStreamAsAttribute
     private String wellName;
     private int wellId;
     private List<Equipment> equipmentList;

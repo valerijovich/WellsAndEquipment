@@ -1,4 +1,4 @@
-package com.valerijovich;
+package com.valerijovich.model;
 
 import java.util.ArrayList;
 import java.util.List;

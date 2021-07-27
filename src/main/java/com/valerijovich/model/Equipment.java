@@ -1,4 +1,4 @@
-package com.valerijovich;
+package com.valerijovich.model;
 
 // The DAO Pattern in Java
 public class Equipment {
