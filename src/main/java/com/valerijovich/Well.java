@@ -6,16 +6,21 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 
 import java.util.List;
 
-// The DAO Pattern in Java
+// Класс, соответствующий таблице с оборудованием Well
 @XStreamAlias("well")
 public class Well {
 
+    // Имя скважины
     @XStreamAsAttribute
     @XStreamAlias("name")
     private String wellName;
+
+    // Порядковый номер скважины в таблице
     @XStreamAsAttribute
     @XStreamAlias("id")
     private int wellId;
+
+    // Список оборудования для отображения в XML файле
     @XStreamImplicit
     private List<Equipment> equipmentList;
 
